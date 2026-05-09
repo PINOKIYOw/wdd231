@@ -1,0 +1,108 @@
+:root {
+    --primary: #000000;
+    --secondary: lightgray;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background: var(--primary);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+    background-color: #99be8b;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#retainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#temple {
+    display: flex;
+    /* FIX */
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    /* FIX */
+    text-align: center;
+}
+
+#ref {
+    display: flex;
+    /* FIX (contents is problematic) */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.show {
+    display: block;
+}
+
+/* FIX: removed .nav → should match nav */
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 100%;
+    /* FIX for responsiveness */
+    height: auto;
+}
+
+.content {
+    display: block;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background: #000000;
+    color: white;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        /* FIX (was block, breaks layout) */
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

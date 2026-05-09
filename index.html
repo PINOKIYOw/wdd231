@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Normalize</title>
+
+    <title>WDD231 Home</title>
+
+    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="author" content="Lwazi Lubisi">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
+
 <body>
-    <p>WDD231</p>
-    
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Site Logo" width="50">
+            <span>Lwazi Lubisi</span>
+        </div>
+
+        <button id="menuBtn">&#9776;</button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I am studying software development and web frontend development.</p>
+        </section>
+
+        <section>
+            <h2>Photo</h2>
+            <img src="images/profile.webp" alt="Profile Photo">
+        </section>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="buttons">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+
+            <div id="courses"></div>
+
+            <p id="credits"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/">GitHub</a>
+            <a href="https://linkedin.com/">LinkedIn</a>
+        </div>
+
+        <p>
+            &copy; <span id="year"></span> Lwazi Lubisi | South Africa
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
