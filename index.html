@@ -22,73 +22,90 @@
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-
     <header>
-        <div class="logo-container">
-            <img src="images/spider-face-svgrepo-com.svg" alt="Site Logo">
-            <span>PACIFIC SLIDE</span>
+        <div class="logo">
+            <img src="images/spider-face-svgrepo-com.svg" alt="Site Logo" width="40">
+            <span>Pacific Slide</span>
         </div>
-
+    
         <button id="menuBtn">&#9776;</button>
-
+    
         <nav id="navMenu">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="#">Final</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
+    
         <h1>Home</h1>
-
-        <section>
-            <h2>About Me</h2>
-            <p>I am studying software development and web frontend development.</p>
-        </section>
-
-        <section>
-            <h2>Photo</h2>
-            <img src="images/profile.jpg" alt="Student Profile Photo">
-        </section>
-
-        <section>
-            <h2>Web and Computer Programming Certificate</h2>
-
-            <div class="buttons">
-                <button id="allBtn">All Courses</button>
-                <button id="wddBtn">WDD Courses</button>
-                <button id="cseBtn">CSE Courses</button>
-            </div>
-
-            <div id="courses"></div>
-
-            <p id="credits"></p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="socials">
-            <a href="https://github.com/">GitHub</a>
-            <img src="images/github-142-svgrepo-com.svg" alt="Github logo">
-            <a href="https://linkedin.com/">LinkedIn</a>
-            <img src="images/linkedin-1-svgrepo-com.svg" alt="Linkedin logo">
-            <a href="https://facebook.com">Facebook</a>
-            <img src="images/facebook-color-svgrepo-com.svg" alt="Facebook logo">
+    
+        <div class="top-grid">
+    
+            <section class="card">
+                <h2>About Me</h2>
+    
+                <p>
+                    Massa facilisis per purus, si imperdiet curae amet.
+                    El fames lorem mi phasellus congue nascetur enim.
+                    Consectetur sociosqu natoque risus odio vehicula libero nisi.
+                    Viverra augue commodo pretium vivamus at duis magna.
+                </p>
+            </section>
+    
+            <section class="card photo-card">
+                <h2>Student Photo</h2>
+    
+                <img src="images/profile.jpg" alt="Student Photo">
+            </section>
+    
         </div>
+    
+        <section class="courses-section">
+    
+            <h2>Web Certificate Courses</h2>
+    
+            <div class="filter-buttons">
+                <button id="allBtn">All</button>
+                <button id="cseBtn">CSE</button>
+                <button id="wddBtn">WDD</button>
+            </div>
+    
+            <div id="courses"></div>
+    
+            <p id="credits"></p>
+    
+        </section>
+    
+    </main>
+    
+    <footer>
+    
+        <div class="socials">
+            <img src="images/linkedin-1-svgrepo-com.svg" alt="linkedin logo">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
 
+            <img src="images/github-142-svgrepo-com.svg" alt="github logo">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            
+            <img src="images/facebook-color-svgrepo-com.svg" alt="facebook logo">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+    
         <p>
-            &copy; <span id="year"></span> Lwazi Lubisi | South Africa
+            &copy; <span id="year"></span> Lwazi Lubisi • South Africa
         </p>
-
+    
         <p id="lastModified"></p>
+    
     </footer>
-
 </body>
 
 </html>

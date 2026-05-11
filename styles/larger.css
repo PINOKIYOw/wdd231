@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     #menuBtn {
         display: none;
@@ -10,17 +10,26 @@
 
     nav ul {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    nav li {
+        flex: 1;
     }
 
-    section:last-child {
-        grid-column: span 2;
+    nav a {
+        text-align: center;
+        border-right: 1px solid #555;
+    }
+
+    .top-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .filter-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
