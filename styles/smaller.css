@@ -12,6 +12,7 @@ body {
 
 header {
     background: #e6e6e6;
+    color: #111;
 }
 
 .logo {
@@ -147,6 +148,7 @@ h1 {
 footer {
     margin-top: 1rem;
     background: #ddd;
+    color: #111;
     text-align: center;
     padding: 1rem;
 }
