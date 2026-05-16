@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Tech Solutions",
+        "address": "12 Main Road",
+        "phone": "021-555-1234",
+        "website": "https://techsolutions.com",
+        "image": "business-building-svgrepo-com.svg",
+        "membership": 3
+    },
+
+    {
+        "name": "Ocean Cafe",
+        "address": "45 Beach Street",
+        "phone": "021-555-5678",
+        "website": "https://oceancafe.com",
+        "image": "business-svgrepo-com.svg",
+        "membership": 2
+    },
+
+    {
+        "name": "Mountain Fitness",
+        "address": "78 Hill Avenue",
+        "phone": "021-555-9876",
+        "website": "https://mountainfitness.com",
+        "image": "business-trip-svgrepo-com.svg",
+        "membership": 1
+    },
+
+    {
+        "name": "Dew Star",
+        "address": "635 Plough Drive",
+        "phone": "021-776-552",
+        "website": "https://dewstar.com",
+        "image": "business-color-signature-svgrepo-com.svg",
+        "membership": 4
+    },
+
+    {
+        "name": "Titan Force",
+        "address": "35 Singer Street",
+        "phone": "021-735-7736",
+        "website": "https://titanforce.com",
+        "image": "business-strategy-svgrepo-com.svg",
+        "membership": 5
+    },
+
+    {
+        "name": "Rawkus Records",
+        "address": "675 Palmer Road",
+        "phone": "021-356-7869",
+        "website": "rawkusrecords.com",
+        "image": "business-suite-svgrepo-com.svg",
+        "membership": 6
+    },
+
+    {
+        "name": "Git Global",
+        "address": "111 Seven Street",
+        "phone": "021-359-3376",
+        "website": "https://gitglobal.com",
+        "image": "business-data-diagram-svgrepo-com.svg",
+        "membership": 7
+    },
+
+    {
+        "name": "Siren Sinks",
+        "address": "15 Slippery Street",
+        "phone": "021-035-0091",
+        "website": "https://sirensinks.com",
+        "image": "business-kalender-svgrepo-com.svg",
+        "membership": 8
+    }
+]
