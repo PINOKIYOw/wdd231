@@ -5,20 +5,22 @@
     }
 
     nav {
-        display: block;
+        display: block !important;
+        margin-top: 0;
     }
 
     nav ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        gap: 1rem;
     }
 
     nav li {
-        flex: 1;
+        border: none;
     }
 
     nav a {
-        text-align: center;
+        padding: 0.8rem 1rem;
     }
 
     #members.grid {

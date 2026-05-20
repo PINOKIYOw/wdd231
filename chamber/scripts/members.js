@@ -36,13 +36,15 @@ getMembers();
 document.getElementById("gridBtn")
 .addEventListener("click", () => {
 
-    membersContainer.classList.add("grid");
     membersContainer.classList.remove("list");
+    membersContainer.classList.add("grid");
+
 });
 
 document.getElementById("listBtn")
 .addEventListener("click", () => {
 
-    membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
+    membersContainer.classList.add("list");
+
 });
