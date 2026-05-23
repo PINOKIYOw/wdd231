@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cape Town Chamber of Commerce</title>
+
+    <meta name="description" content="Cape Town Chamber of Commerce Home Page">
+    <meta name="author" content="Lwazi Lubisi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cape Town Chamber">
+    <meta property="og:description" content="Cape Town Chamber of Commerce Website">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="images/spider-face-svgrepo-com.svg" alt="Cape Town Chamber Logo">
+            <span>Cape Town Chamber</span>
+
+            <button id="menuBtn">&#9776;</button>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <img src="images/maxresdefault.webp" alt="Cape Town Skyline">
+
+            <div class="hero-text">
+                <h1>Welcome to Cape Town Chamber</h1>
+
+                <a href="#" class="cta-btn">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+        <!-- MAIN GRID -->
+        <div class="home-grid">
+
+            <!-- EVENTS -->
+            <section class="card">
+                <h2>Current Events</h2>
+
+                <p>
+                    Annual Cape Town Business Networking Expo
+                    happening this Friday at the Convention Centre.
+                </p>
+            </section>
+
+            <!-- WEATHER -->
+            <section class="card weather-card">
+
+                <h2>Weather</h2>
+
+                <p id="current-temp"></p>
+                <p id="weather-desc"></p>
+
+                <div id="forecast"></div>
+
+            </section>
+
+        </div>
+
+        <!-- SPOTLIGHTS -->
+        <section class="spotlights">
+
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlight-container"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-info">
+
+            <p>
+                Cape Town Chamber of Commerce<br>
+                Cape Town, South Africa<br>
+                info@capetowncc.co.za
+            </p>
+
+            <p>
+                WDD 231<br>
+                Lwazi Lubisi
+            </p>
+
+        </div>
+
+        <p>
+            &copy; <span id="year"></span> Lwazi Lubisi | South Africa
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
