@@ -36,6 +36,14 @@ header {
     cursor: pointer;
 }
 
+#navMenu {
+    display: none;
+}
+
+#navMenu.open {
+    display: block;
+}
+
 /* Mobile Navigation */
 nav {
     display: none;
