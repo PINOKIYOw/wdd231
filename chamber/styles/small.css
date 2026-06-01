@@ -223,3 +223,78 @@ footer {
     height: auto;
     margin-bottom: 1rem;
 }
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    padding: .75rem;
+    margin-top: .3rem;
+}
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: fadeUp .8s forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: .8s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    padding: 1.5rem;
+    max-width: 400px;
+}
+
+.submission-results {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
