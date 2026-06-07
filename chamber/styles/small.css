@@ -369,3 +369,48 @@ dialog button {
     border-radius: 10px;
     background: white;
 }
+
+#visitMessage {
+    background: #669bbc;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+}
+
+.discover-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-card button {
+    margin-top: .75rem;
+    padding: .6rem 1rem;
+    border: none;
+    background: #003049;
+    color: white;
+    cursor: pointer;
+}

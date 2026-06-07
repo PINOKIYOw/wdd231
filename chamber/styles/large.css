@@ -55,4 +55,20 @@
         gap: 2rem;
         align-items: start;
     }
+
+    .discover-grid {
+    
+        grid-template-columns:
+            1fr 1fr 1fr;
+    
+        grid-template-areas:
+            "one two three"
+            "four five six"
+            "seven eight eight";
+    }
+    
+    .discover-card img:hover {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 10px #000);
+    }
 }

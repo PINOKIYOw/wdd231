@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lwazi Lubisi">
+    <meta name="description" content="A page that will help the user discover more about Cape Town and surrounding attractions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover | Cape Town Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Cape Town Chamber">
+    <meta property="og:description" content="This is the Discover Page for the Cape Town Chamber of Commerce Website">
+    <meta property="og:image" content="https://pinokiyow.github.io/wdd231/chamber/images/hero-image.webp">
+    <meta property="og:url" content="https://pinokiyow.github.io/wdd231/chamber/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/spider-face-svgrepo-com.svg" alt="Pretoria Chamber Logo">
+            <h1>Cape Town Chamber of Commerce</h1>
+
+            <button id="menuBtn">&#9776;</button>
+        </div>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Discover Cape Town</h1>
+
+        <section id="visitMessage"></section>
+
+        <section class="discover-grid" id="discoverContainer"></section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Pretoria Chamber of Commerce
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent =
+            `Last Modified: ${document.lastModified}`;
+    </script>
+
+</body>
+
+</html>
