@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #000000;
+    color: white;
+}
+
+header {
+    background: #4a4a4a;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+}
+
+#menuBtn {
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background: #333;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cta-btn {
+    background: #c2185b;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: #222;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgb(61, 61, 61);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.socials img {
+    width: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1rem;
+}
+
+.booking-summary {
+    background: #222;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+dialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+}
