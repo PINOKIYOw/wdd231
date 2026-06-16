@@ -1,50 +1,85 @@
-@media screen and (min-width: 641px) {
+@media screen and (min-width:641px) {
 
     .discover-grid {
+
+        display: grid;
+
         grid-template-columns: 1fr 1fr;
 
         grid-template-areas:
-            "one two"
-            "three four"
-            "five six"
-            "seven eight";
+
+            "welcome welcome"
+
+            "card1 card2"
+
+            "card3 card4"
+
+            "card5 card6"
+
+            "card7 card8";
+
+        gap: 1rem;
+    }
+
+    #visitMessage {
+
+        grid-area: welcome;
     }
 
     .discover-card:nth-child(1) {
-        grid-area: one;
+
+        grid-area: card1;
     }
 
     .discover-card:nth-child(2) {
-        grid-area: two;
+
+        grid-area: card2;
     }
 
     .discover-card:nth-child(3) {
-        grid-area: three;
+
+        grid-area: card3;
     }
 
     .discover-card:nth-child(4) {
-        grid-area: four;
+
+        grid-area: card4;
     }
 
     .discover-card:nth-child(5) {
-        grid-area: five;
+
+        grid-area: card5;
     }
 
     .discover-card:nth-child(6) {
-        grid-area: six;
+
+        grid-area: card6;
     }
 
     .discover-card:nth-child(7) {
-        grid-area: seven;
+
+        grid-area: card7;
     }
 
     .discover-card:nth-child(8) {
-        grid-area: eight;
+
+        grid-area: card8;
+    }
+
+    .discover-card img {
+
+        transition:
+
+            transform .3s ease,
+
+            filter .3s ease;
     }
 
     .discover-card img:hover {
+
         transform: scale(1.05);
+
         filter: brightness(1.1);
-        transition: .3s;
     }
+
 }

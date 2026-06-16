@@ -1,75 +1,149 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
+
+    /* Hide hamburger */
 
     #menuBtn {
+
         display: none;
     }
 
-    nav {
-        display: block !important;
+    /* Desktop Navigation */
+
+    #navMenu {
+
+        display: block;
+
+        width: auto;
+
         margin-top: 0;
     }
 
-    nav ul {
+    #navMenu ul {
+
         display: flex;
+
         justify-content: center;
-        gap: 1rem;
+
+        gap: 2rem;
     }
 
-    nav li {
+    #navMenu li {
+
         border: none;
     }
 
-    nav a {
+    #navMenu a {
+
         background: transparent;
-        padding: 0.8rem 1rem;
+
+        padding: .8rem 1rem;
     }
+
+    /* Directory */
 
     #members.grid {
-        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-columns:
+
+            repeat(3, 1fr);
     }
 
+    /* Footer */
+
     .footer-info {
+
         display: flex;
+
         justify-content: space-around;
     }
 
+    /* Home */
+
     .home-grid {
-        grid-template-columns: 2fr 1fr;
+
+        grid-template-columns:
+
+            2fr 1fr;
     }
-    
+
     #spotlight-container {
-        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-columns:
+
+            repeat(3, 1fr);
     }
-    
+
     .hero-text {
+
         top: 35%;
+
         left: 10%;
     }
-    
+
     .hero-text h1 {
+
         font-size: 2.5rem;
     }
 
+    /* Join */
+
     .join-container {
+
         display: grid;
-        grid-template-columns: 2fr 1fr;
+
+        grid-template-columns:
+
+            2fr 1fr;
+
         gap: 2rem;
+
         align-items: start;
     }
 
+    /* Discover */
+
     .discover-grid {
-    
+
+        display: grid;
+
         grid-template-columns:
+
             1fr 1fr 1fr;
-    
+
         grid-template-areas:
-            "one two three"
-            "four five six"
-            "seven eight eight";
+
+            "welcome welcome welcome"
+
+            "card1 card2 card3"
+
+            "card4 card5 card6"
+
+            "card7 card8 card8";
+
+        gap: 1rem;
     }
-    
+
+    #visitMessage {
+
+        grid-area: welcome;
+    }
+
+    .discover-card img {
+
+        transition:
+
+            transform .3s ease,
+
+            filter .3s ease;
+    }
+
     .discover-card img:hover {
+
         transform: scale(1.08);
-        filter: drop-shadow(0 0 10px #000);
+
+        filter:
+
+            drop-shadow(0 0 10px #000);
     }
+
 }

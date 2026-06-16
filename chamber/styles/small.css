@@ -29,12 +29,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
     gap: 1rem;
 }
 
 .logo img {
     width: 60px;
     height: auto;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #menuBtn {
@@ -50,6 +56,14 @@ header {
 /* =========================
    Navigation
 ========================= */
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
 
 #navMenu {
     display: none;
@@ -228,6 +242,16 @@ footer {
     padding: 1rem;
 }
 
+.card img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 8px;
+
+}
+
 .card {
     background: white;
     border-radius: 8px;
@@ -389,46 +413,85 @@ dialog::backdrop {
 }
 
 #visitMessage {
+
+    grid-area: welcome;
+
     background: #669bbc;
+
     color: white;
+
     padding: 1rem;
-    margin-bottom: 1rem;
+
     border-radius: 8px;
+
     text-align: center;
 }
 
+
 .discover-grid {
+
     display: grid;
-    gap: 1rem;
 
     grid-template-areas:
-        "one"
-        "two"
-        "three"
-        "four"
-        "five"
-        "six"
-        "seven"
-        "eight";
+
+        "welcome"
+
+        "card1"
+
+        "card2"
+
+        "card3"
+
+        "card4"
+
+        "card5"
+
+        "card6"
+
+        "card7"
+
+        "card8";
+
+    gap: 1rem;
 }
 
-.discover-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
+
+.discover-card:nth-child(1) {
+
+    grid-area: card1;
 }
 
-.discover-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.discover-card:nth-child(2) {
+
+    grid-area: card2;
 }
 
-.discover-card button {
-    margin-top: .75rem;
-    padding: .6rem 1rem;
-    border: none;
-    background: #003049;
-    color: white;
-    cursor: pointer;
+.discover-card:nth-child(3) {
+
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+
+    grid-area: card8;
 }
