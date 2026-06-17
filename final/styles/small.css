@@ -12,14 +12,22 @@ body {
 }
 
 header {
-    background: #4a4a4a;
-    padding: 1rem;
+    background: #222;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo {
+.logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    width: 55px;
+    height: auto;
 }
 
 .logo img {
@@ -31,6 +39,12 @@ header {
     background: none;
     color: white;
     border: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+#menuBtn:hover {
+    transform: rotate(90deg);
 }
 
 nav {
@@ -48,33 +62,116 @@ nav a {
     padding: 1rem;
 }
 
-nav a:hover {
-    background: #333;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+nav a:hover,
+nav a.active {
+
+    background: #c2185b;
+
+    transform: translateY(-2px);
 }
 
 .hero {
     position: relative;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+.hero {
+
+    position: relative;
+
+    min-height: 80vh;
+
 }
 
-.hero-text {
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(rgba(0, 0, 0, .55),
+
+            rgba(0, 0, 0, .55));
+
+}
+
+.hero img {
+
+    width: 100%;
+
+    height: 80vh;
+
+    object-fit: cover;
+
+}
+
+.hero-content {
+
+    z-index: 1;
+
+}
+
+.hero-content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .cta-btn {
+
+    display: inline-block;
+
     background: #c2185b;
+
     color: white;
+
     padding: 1rem 2rem;
-    border-radius: 10px;
+
+    border-radius: 50px;
+
     text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+
+        transform .3s,
+
+        background .3s;
+
+}
+
+.cta-btn:hover {
+
+    background: #e91e63;
+
+    transform: translateY(-3px);
+
 }
 
 .gallery-grid {
@@ -97,9 +194,29 @@ nav a:hover {
 }
 
 footer {
+
+    background: #222;
+
+    padding: 3rem 1rem;
+
     text-align: center;
-    padding: 2rem;
-    background: rgb(61, 61, 61);
+
+    border-top: 1px solid #333;
+
+}
+
+footer a {
+
+    color: #e91e63;
+
+    text-decoration: none;
+
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+
 }
 
 .socials {
@@ -136,4 +253,126 @@ dialog {
     padding: 2rem;
     border: none;
     border-radius: 10px;
+}
+
+.styles {
+
+    padding: 4rem 1rem;
+
+}
+
+.styles h2 {
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+
+}
+
+.styles-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+
+}
+
+.style-card {
+
+    background: #161616;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition:
+
+        transform .3s,
+
+        box-shadow .3s;
+
+}
+
+.style-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+        0 10px 30px rgba(194, 24, 91, .35);
+
+}
+
+.style-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.style-card h3 {
+
+    margin: 1rem 0;
+
+}
+
+.style-card p {
+
+    padding: 0 1rem 1.5rem;
+
+}
+
+#featured-container {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 2rem;
+
+    padding: 2rem 0;
+
+}
+
+.featured-card {
+
+    background: #161616;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+.featured-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+}
+
+.featured-card h3 {
+
+    padding: 1rem;
+
+}
+
+.featured-card p {
+
+    padding: 0 1rem 1rem;
+
 }

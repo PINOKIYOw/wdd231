@@ -11,6 +11,17 @@
         gap: 2rem;
     }
 
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
